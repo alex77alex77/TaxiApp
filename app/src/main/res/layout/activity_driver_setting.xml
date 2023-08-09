@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".driver.activity.DriverSettingActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyLight1"
+                android:gravity="center_horizontal"
+                android:padding="6dp"
+                android:text="@string/settings"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="end"
+                android:background="@drawable/custom_image_button"
+                android:drawableEnd="@drawable/ic_baseline_more_vert_24"
+                android:fontFamily="@font/aclonica"
+                android:gravity="end"
+                android:padding="5dp"
+                android:paddingEnd="20dp"
+                android:text="@string/without_name"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+
+                <Button
+                    android:id="@+id/btnDefineRate"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_rate" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/route_history"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnDisplayRoute"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_m" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/server"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMySrv"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="false"
+                        android:text="@string/btn_create_over" />
+
+                    <Button
+                        android:id="@+id/btnDelSrv"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/deleted_" />
+                </RelativeLayout>
+
+
+                <CheckBox
+                    android:id="@+id/chkRunSrv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:minHeight="48dp"
+                    android:text="@string/autorun" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/connect_to_provider"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/blockServerLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvUseServers"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/hint_no_data"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/holo_red_dark" />
+
+                    <ImageButton
+                        android:id="@+id/ibListServer"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/custom_image_button"
+                        android:padding="10dp"
+                        android:src="@android:drawable/arrow_down_float" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/personal_data"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_name" />
+
+                <EditText
+                    android:id="@+id/etNameUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="15"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_phone" />
+
+                <EditText
+                    android:id="@+id/etPhoneUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textViewIdentificationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/t_transport"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_model" />
+
+                <EditText
+                    android:id="@+id/etModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:hint="@string/loading"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:selectAllOnFocus="true"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_reg_num" />
+
+                <EditText
+                    android:id="@+id/etRegNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:hint="@string/loading"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:selectAllOnFocus="true"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/color" />
+
+                <EditText
+                    android:id="@+id/etColorAuto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/loading"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:selectAllOnFocus="true"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:gravity="center_vertical"
+                    android:text="@string/t_dislocation"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/blockElConnReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDislocation"
+                        style="@android:style/Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/ibSelDislocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:background="@drawable/custom_image_button"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_criteria"
+                    android:textStyle="bold" />
+
+                <com.alexei.taxiapp.MultiSpinner
+                    android:id="@+id/msOrderCriteria"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:entries="@array/listTypeTransport" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_radius"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:selectAllOnFocus="true"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/bell"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chkVoicing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/voice" />
+
+                <CheckBox
+                    android:id="@+id/chk_off_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/access_to_host"
+                    android:textColor="@color/colorDarkerAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_caption" />
+
+                <EditText
+                    android:id="@+id/etNameHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="15"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawableStart="@drawable/ic_baseline_emergency_24"
+                    android:text="@string/t_password" />
+
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:selectAllOnFocus="true" />
+
+                <CheckBox
+                    android:id="@+id/chkAccessToSOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:enabled="true"
+                    android:text="@string/debug_password_off_sos" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSettingDrvClose"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:text="@string/close"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/btnSaveSetting"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:text="@string/save"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/flBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver.activity.DetailedReportDrvActivity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+
+                android:id="@+id/tableDetailedStatistic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:padding="10dp"
+                android:scrollbars="horizontal|vertical"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:isScrollContainer="true">
+
+                    <TextView
+                        android:id="@+id/tvCellTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="7"
+                        android:gravity="center"
+
+                        android:text="@string/report_day"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/char_num"
+                        android:textColor="#2e6928"
+                        android:textIsSelectable="false"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/started"
+                        android:textColor="#2e6928"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/route"
+                        android:textColor="#2e6928"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/t_rate"
+                        android:textColor="#2e6928"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/time_"
+                        android:textColor="#2e6928"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/amount"
+                        android:textColor="#2e6928"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="3dp"
+                        android:text="@string/currency"
+                        android:textColor="#2e6928"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+</RelativeLayout>
+

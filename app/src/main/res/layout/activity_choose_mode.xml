@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseModeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/taxi" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="@string/title_app"
+            android:textColor="@color/colorAccent"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/sign_out"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/passengerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_above="@id/driverButton"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+
+            android:text="@string/to_order"
+            android:textAllCaps="false"
+            android:textColor="@color/custom_button_color_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/driverButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+
+            android:text="@string/btn_driver"
+            android:textAllCaps="false"
+            android:textColor="@color/custom_button_color_text"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</FrameLayout>

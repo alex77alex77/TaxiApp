@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:id="@+id/menuPrimaryGroupCommand">
+
+        <item
+            android:id="@+id/actionAdapterDisplayInMap"
+            android:orderInCategory="9"
+            android:title="@string/cmd_show_to_map" />
+
+        <item
+            android:id="@+id/actionAdapterSendMessage"
+            android:orderInCategory="10"
+            android:title="@string/cmd_message" />
+
+        <item
+            android:id="@+id/actionAdapterPhone"
+            android:orderInCategory="12"
+            android:title="@string/to_call" />
+
+        <item
+            android:id="@+id/actionAdapterBlockDrv"
+            android:orderInCategory="11"
+            android:title="@string/cmd_blocked" />
+
+        <item
+            android:id="@+id/actionAdapterInfoDriver"
+            android:orderInCategory="17"
+            android:title="@string/cmd_debug_driver" />
+
+        <item
+            android:id="@+id/actionAdapterUnblockDrv"
+            android:orderInCategory="14"
+            android:title="@string/cmd_unlock" />
+
+        <item
+            android:id="@+id/actionAdapterRoute"
+            android:orderInCategory="16"
+            android:title="@string/cmd_info_route" />
+
+        <item
+            android:id="@+id/actionAdapterReport"
+            android:orderInCategory="13"
+            android:title="@string/report" />
+
+    </group>
+
+</menu>

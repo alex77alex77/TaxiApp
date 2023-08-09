@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/avaiSendDataForConnect"
+
+        android:orderInCategory="10"
+        android:title="@string/cmd_connected" />
+    <item
+        android:id="@+id/avaiDelConnect"
+
+        android:orderInCategory="10"
+        android:title="@string/del_connect" />
+
+</menu>

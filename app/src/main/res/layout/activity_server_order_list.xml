@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".server.activity.ServerOrderListActivity">
+
+    <TextView
+        android:id="@+id/tvOrderReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/report_m"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ibShowOrderReport"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tvOrderReport"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_image_button"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewServerOrderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chkAutoDistribution"
+        android:layout_below="@id/ibShowOrderReport"
+        android:layout_alignParentTop="false"
+        android:paddingBottom="10dp" />
+
+    <CheckBox
+        android:id="@+id/chkAutoDistribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/blockBottomButtons"
+        android:background="@android:color/transparent"
+        android:text="@string/auto_distribution" />
+
+    <LinearLayout
+        android:id="@+id/blockBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMenuSrvOrderList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/menu"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSrvCreateOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/create_"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

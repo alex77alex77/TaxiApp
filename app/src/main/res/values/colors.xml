@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <color name="blue">#0000ff</color>
+
+    <color name="colorAccent">#03dac5</color>
+
+    <color name="colorDarkerAccent">#017e72</color>
+
+    <color name="colorMail">#ff9800</color>
+
+    <color name="colorPrimary">#551501</color>
+
+    <color name="colorPrimaryLighter">#882100</color>
+
+    <color name="darkBlue">#014497</color>
+
+    <color name="darkGrey">#222222</color>
+
+    <color name="green">#018701</color>
+
+    <color name="grey">#555555</color>
+
+    <color name="grey2">#8a8a8a</color>
+
+    <color name="greyLight">#b6b6b6</color>
+
+    <color name="greyLight1">#f3f1f1</color>
+
+    <color name="greyLight2">#e6e5e5</color>
+
+    <color name="indigo">#4b0082</color>
+
+    <color name="lightBlue">#2a2afd</color>
+
+    <color name="orange">#ff7f00</color>
+
+    <color name="red">#910000</color>
+
+    <color name="two">#00c521</color>
+
+    <color name="twoL">#96fba7</color>
+
+    <color name="white">@android:color/white</color>
+
+    <color name="yellow">#ffff00</color>
+</resources>

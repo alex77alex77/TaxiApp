@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".server.activity.ServerDrvDotTheMapActivity">
+
+    <fragment
+        android:id="@+id/mapDotDrivers"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".servers.ServerDrvDotTheMapActivity" />
+
+    <LinearLayout
+        android:id="@+id/blockFindDotDrvLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_toEndOf="@id/ibNewMessage"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearchDrv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/feild_dot_find_address"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ibSearchDrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/custom_image_button"
+            android:backgroundTint="@color/greyLight"
+            android:padding="6dp"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <ImageButton
+            android:id="@+id/ibByCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/custom_image_button"
+            android:backgroundTint="@color/greyLight"
+            android:padding="6dp"
+            android:src="@drawable/ic_baseline_center_focus_strong_24" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/ibMenuDrvDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:alpha="0.8"
+        android:background="@drawable/custom_image_button"
+        android:backgroundTint="@color/greyLight"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_menu_open_24"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ibNewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/ibMenuDrvDot"
+        android:alpha="0.8"
+        android:background="@drawable/custom_button_transparent"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_mark_email_unread_24"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+

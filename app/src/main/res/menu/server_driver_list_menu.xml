@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+
+        <item
+            android:id="@+id/menuFindDriver"
+            android:title="@string/cmd_find" />
+        <item
+            android:id="@+id/menuSendMsgAllDrivers"
+            android:title="@string/cmd_message" />
+        <item
+            android:id="@+id/menuSortedDriver"
+            android:title="@string/cmd_sorted" />
+
+    </group>
+
+</menu>

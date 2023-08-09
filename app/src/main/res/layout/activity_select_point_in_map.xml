@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPointInMapActivity">
+
+    <fragment
+        android:id="@+id/mapSelDot"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/butOk" />
+
+    <TextView
+        android:id="@+id/tvDistanceToDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/butOk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_button"
+        android:enabled="true"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@drawable/custom_button"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/blockFindLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/sell_point_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="40"
+            android:minHeight="48dp" />
+
+        <ImageButton
+            android:id="@+id/ibSpeakAddress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/custom_image_button"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <ImageButton
+            android:id="@+id/ibFindAddress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/custom_image_button"
+            android:src="@drawable/ic_baseline_search_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRouteReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blockFindLL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.8"
+        android:background="@color/greyLight1"
+        android:padding="5dp"
+        android:text="@string/sell_point_route"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alexei.taxiapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name=" android.permission.ACCESS_NETWORK_STATE " />
+    <uses-permission android:name=" android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TaxiApp"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+
+        <activity
+            android:name=".server.activity.ServerReportDrvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.ServerSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.ServerReadRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.ServerOrderListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.ServerDrvDotTheMapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_server_drv_dot_the_map" />
+        <activity
+            android:name=".server.activity.ServerDriverListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.ServerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.RatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".server.activity.EditDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.ReportDrvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.DetailedReportDrvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.SosDotMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sos_dot_maps" />
+        <activity
+            android:name=".driver.activity.RouteFromHistoryMapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_route_from_history_map" />
+        <activity
+            android:name=".driver.activity.RequestConnectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.OrderGuideActivity"
+            android:exported="false"
+            android:label="@string/title_activity_order_guide" />
+        <activity
+            android:name=".driver.activity.OrderDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.ListFreeOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.DriverSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.activity.DriverMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_driver_maps" />
+        <activity
+            android:name=".client.activity.ClientStatusOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".client.activity.ClientMapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_client_map" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectPointInMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FillingOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseModeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TaxiApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

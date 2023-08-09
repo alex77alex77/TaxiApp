@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver.activity.DriverMapsActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/blockBottomLL"
+        android:layout_marginBottom="-1dp">
+
+
+    </androidx.fragment.app.FragmentContainerView>
+
+    <TextView
+        android:id="@+id/tvInfoProviderImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvProviders"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_image_button"
+        android:drawableStart="@drawable/ic_baseline_warning_amber_24"
+        android:padding="6dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvProviders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/blockBottomLL"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_image_button"
+        android:padding="7dp"
+        android:text="@string/providers"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvSOS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_button"
+
+            android:backgroundTint="@color/greyLight"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/sos"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/ibGPS"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:src="@drawable/ic_baseline_my_location_red_24"
+            tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <ImageButton
+            android:id="@+id/ib_my_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_image_button"
+            android:padding="6dp"
+            android:src="@drawable/ic_baseline_storage_24"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvMailSrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:drawableStart="@drawable/ic_baseline_mark_email_unread_24"
+            android:padding="6dp"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/blockBottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getOnTheLineButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/stand_up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMenuOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/menu"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnFreeOrders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/drv_map_free"
+            android:textAllCaps="false"
+            android:textColor="@drawable/custom_button"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnPersonOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+            android:text="@string/drv_map_assigned"
+            android:textAllCaps="false"
+            android:textColor="@drawable/custom_button" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+</RelativeLayout>

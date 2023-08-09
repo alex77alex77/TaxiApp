@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewServerDriveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvStateShift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/greyLight1"
+            android:padding="3dp"
+            android:text="@string/debug_state_unknown"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <LinearLayout
+            android:id="@+id/blockSendMessageLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editTextMessageDriverInAdapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/msg"
+                android:maxLength="200"
+                android:singleLine="false" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSendMessageDriverInAdapter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:background="@drawable/custom_button_transparent"
+                app:srcCompat="@drawable/ic_baseline_send_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blockElementLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabMenuDriverToServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                app:backgroundTint="@color/white"
+                app:borderWidth="2dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+            <ImageButton
+                android:id="@+id/ibEmailDrvList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_mark_email_unread_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewServerDriveStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingEnd="45dp"
+                android:text="@string/debug_no_connected"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/tvSOSDrvList"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:text="@string/sos"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

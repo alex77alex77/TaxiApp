@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <declare-styleable name="MultiSpinner">
+        <attr name="android:entries" />
+    </declare-styleable>
+
+    <array name="listTypeTransport">
+
+        <item>乘客</item>
+
+        <item>1个座位</item>
+
+        <item>2个座位</item>
+
+        <item>3个月</item>
+
+        <item>4个座位</item>
+
+        <item>5个座位</item>
+
+        <item>6个座位</item>
+
+        <item>7个座位</item>
+
+        <item>8个座位</item>
+
+        <item>巴士</item>
+
+        <item>货运</item>
+
+        <item>打开</item>
+
+        <item>自卸车</item>
+
+        <item>身体是封闭的</item>
+
+        <item>小型起重机机械手</item>
+
+        <item>货柜</item>
+
+        <item>电冰箱</item>
+
+        <item>1吨</item>
+
+        <item>1.5吨</item>
+
+        <item>2吨</item>
+
+        <item>3吨</item>
+
+        <item>4吨</item>
+
+        <item>5吨</item>
+
+        <item>6吨</item>
+
+        <item>7吨</item>
+
+        <item>8吨</item>
+
+        <item>9吨</item>
+
+        <item>10吨</item>
+
+        <item>20吨</item>
+
+        <item>30吨</item>
+
+        <item>40吨</item>
+
+        <item>2米</item>
+
+        <item>2.5米</item>
+
+        <item>3米</item>
+
+        <item>3.5米</item>
+
+        <item>4米</item>
+
+        <item>4.5米</item>
+
+        <item>5米</item>
+
+        <item>6米</item>
+
+        <item>7米</item>
+
+        <item>8米</item>
+
+        <item>9米</item>
+
+        <item>10米</item>
+
+        <item>11米</item>
+
+        <item>12米</item>
+
+        <item>特殊机械</item>
+
+    </array>
+
+
+    <array name="listTypesServices">
+
+        <item>客运的士</item>
+
+        <item>货运的士</item>
+
+        <item>货物运输</item>
+
+        <item>超大货物的运输</item>
+
+        <item>重型货物运输</item>
+
+        <item>组合货物的交付</item>
+
+        <item>租用专用机械</item>
+
+        <item>特種設備服務</item>
+
+        <item>巴士旅行团</item>
+
+        <item>旅客运输</item>
+
+    </array>
+
+</resources>

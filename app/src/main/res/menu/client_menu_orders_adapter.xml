@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionMsgDrv"
+        android:orderInCategory="10"
+        android:title="@string/message_for_drv" />
+
+    <item
+        android:id="@+id/actionMsgSrv"
+        android:orderInCategory="11"
+        android:title="@string/cmd_message_for_company" />
+
+</menu>

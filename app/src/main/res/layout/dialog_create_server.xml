@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_emergency_24"
+        android:text="@string/name_srv"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNameServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/name_m"
+        android:inputType="textPersonName"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_emergency_24"
+        android:text="@string/type_activity"
+        android:textStyle="bold" />
+
+    <com.alexei.taxiapp.MultiSpinner
+        android:id="@+id/msTypeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/listTypesServices" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/t_phone"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etPhoneServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="15" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/debug_new_srv"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>

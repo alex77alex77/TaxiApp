@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionMsgProvList"
+        android:orderInCategory="10"
+        android:title="@string/cmd_message" />
+
+    <item
+        android:id="@+id/actionStopProvList"
+        android:orderInCategory="11"
+        android:title="@string/cmd_pause" />
+
+    <item
+        android:id="@+id/actionContinueProvList"
+        android:orderInCategory="12"
+        android:title="@string/next" />
+
+<!--    <item-->
+<!--        android:id="@+id/actionSendDataReq"-->
+<!--        android:orderInCategory="13"-->
+<!--        android:title="@string/cmd_send_data" />-->
+
+    <item
+        android:id="@+id/actionShift"
+        android:orderInCategory="14"
+        android:title="@string/cmd_open_shift" />
+
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+        <item
+            android:id="@+id/actionOrderSendToCallSign"
+            android:title="@string/cmd_send_to_drv" />
+
+        <item
+            android:id="@+id/actionOrderSendToAll"
+            android:title="@string/cmd_send_to_everyone" />
+
+        <item
+            android:id="@+id/actionOrderCancel"
+            android:orderInCategory="5"
+            android:title="@string/cmd_canceled" />
+
+        <item
+            android:id="@+id/menuOrderDrv"
+            android:orderInCategory="4"
+            android:title="@string/btn_driver">
+            <menu>
+                <item
+                    android:id="@+id/actionOrderPhoneDrv"
+                    android:title="@string/to_call" />
+                <item
+                    android:id="@+id/actionOrderMsgDrv"
+                    android:title="@string/cmd_message" />
+                <item
+                    android:id="@+id/actionOrderInfoAssignDrv"
+                    android:title="@string/cmd_debug_driver" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menuOrderClient"
+            android:enabled="false"
+            android:orderInCategory="6"
+            android:title="@string/client">
+            <menu>
+                <item
+                    android:id="@+id/actionOrderPhoneClient"
+                    android:title="@string/to_call" />
+                <item
+                    android:id="@+id/actionOrderMsgClient"
+                    android:title="@string/cmd_message" />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".server.activity.ServerDriverListActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewServerDriverList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibReport" />
+
+    <TextView
+        android:id="@+id/tvDrvReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:text="@string/report_m"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ibReport"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvDrvReport"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_image_button"
+        android:padding="3dp"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+
+    <LinearLayout
+        android:id="@+id/blockBottomServerDriversLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDisplayToMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/map_h"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnMenuServerDrivers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/menu"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

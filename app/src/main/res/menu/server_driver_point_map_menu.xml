@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menuPrimaryGroupCommand">
+
+
+       <item
+            android:id="@+id/actionDrvDotSendMsg"
+            android:orderInCategory="10"
+            android:title="@string/cmd_message" />
+
+        <item
+            android:id="@+id/actionDrvDotPhone"
+            android:orderInCategory="12"
+            android:title="@string/to_call" />
+
+
+        <item
+            android:id="@+id/actionDrvDotInfo"
+            android:orderInCategory="14"
+            android:title="@string/cmd_debug_driver" />
+
+    </group>
+</menu>

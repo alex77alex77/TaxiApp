@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:color="@color/colorPrimary" android:drawable="@color/colorDarkerAccent" android:state_pressed="true" />
+
+    <item android:color="@color/colorPrimary" android:drawable="@color/colorAccent" android:state_enabled="true" />
+
+    <item android:color="@color/grey" android:drawable="@color/greyLight" android:state_enabled="false" />
+
+</selector>

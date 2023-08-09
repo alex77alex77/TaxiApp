@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menuGroupCommand">
+
+        <item
+            android:id="@+id/menuCmd1"
+            android:title="@string/cmd_complete_order" />
+        <item
+            android:id="@+id/menuCmd2"
+            android:title="@string/cmd_msg_to_client" />
+        <item
+            android:id="@+id/menuCmd3"
+            android:title="@string/cmd_cancel_order" />
+        <item
+            android:id="@+id/menuCmd4"
+            android:title="@string/cmd_navigator" />
+        <item
+            android:id="@+id/menuCmd7"
+            android:title="@string/route_history" />
+        <item
+            android:id="@+id/menuCmd5"
+            android:title="@string/cmd_to_server" />
+        <item
+            android:id="@+id/menuCmd6"
+            android:title="@string/redirect_order" />
+        <item
+            android:id="@+id/menuCmd8"
+            android:visible="false"
+            android:title="@string/close" />
+    </group>
+
+</menu>

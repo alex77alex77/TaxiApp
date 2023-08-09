@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:color="@color/white" android:drawable="@color/colorPrimaryLighter" android:state_pressed="true" />
+
+    <item android:color="@color/white" android:drawable="@color/two" android:state_activated="true" />
+
+    <item android:color="@color/grey" android:drawable="@color/greyLight" android:state_enabled="false" />
+
+    <item android:color="@color/white" android:drawable="@color/colorPrimary" android:state_enabled="true" />
+
+</selector>

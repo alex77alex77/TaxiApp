@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menuPrimaryGroupCommand">
+        <item
+            android:id="@+id/actionSetting"
+            android:orderInCategory="9"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/actionShowReport"
+            android:orderInCategory="10"
+            android:title="@string/report" />
+
+        <item
+            android:id="@+id/actionProviders"
+            android:orderInCategory="11"
+            android:title="@string/cmd_provider"/>
+        <item
+            android:id="@+id/actionStartServer"
+            android:orderInCategory="12"
+            android:title="@string/cmd_run_server"/>
+
+    </group>
+</menu>

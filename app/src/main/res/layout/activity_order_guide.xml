@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver.activity.OrderGuideActivity">
+
+    <fragment
+        android:id="@+id/mapGuide"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/blockButton"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout
+        android:id="@+id/blockAddressElements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+
+            android:id="@+id/titleOrder"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="30dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:text="@string/order"
+            android:textColor="@color/custom_color_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/blockIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibMailFromClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_image_button"
+                android:padding="6dp"
+                android:src="@drawable/ic_baseline_mail_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMailFromSrv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_mark_email_unread_24"
+                android:padding="6dp"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddressGuideOrderFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@android:color/white"
+            android:gravity="left"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvNoteGuideOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:background="@android:color/white"
+            android:gravity="left"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvAddressGuideOrderTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:background="@android:color/white"
+            android:gravity="left"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/blockTaximeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/blockButton"
+        android:layout_below="@id/blockAddressElements"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tripAmountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/timeSpentTextView"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.7"
+            android:background="@color/colorPrimary"
+            android:drawingCacheQuality="low"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp"
+            android:text="0"
+            android:textColor="@color/design_default_color_secondary"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/ibSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignRight="@id/tripAmountTextView"
+            android:layout_alignBottom="@id/tripAmountTextView"
+            android:layout_alignParentLeft="false"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@id/tripAmountTextView"
+            android:background="@drawable/custom_image_button2"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_volume_up_24_white" />
+
+        <TextView
+            android:id="@+id/timeSpentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/coveredDistanceTextView"
+            android:alpha="0.7"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/design_default_color_secondary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/coveredDistanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/guide_value_km"
+            android:textColor="@color/design_default_color_secondary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvCurrentRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tripAmountTextView"
+            android:alpha="0.7"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/guide_rate_not_define"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/blockButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibSOS"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:filterTouchesWhenObscured="false"
+            android:src="@drawable/sos_40"
+            app:tint="@android:color/darker_gray" />
+
+        <ImageButton
+            android:id="@+id/ibGuidePhoneCall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:src="@android:drawable/sym_action_call"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/actionOrderGuideButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/arrive"
+            android:textAllCaps="false"
+            android:textColor="@drawable/custom_button"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/close"
+            android:textAllCaps="false"
+            android:textColor="@drawable/custom_button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/menu"
+            android:textColor="@drawable/custom_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>
